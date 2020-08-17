@@ -1,0 +1,314 @@
+   @font-face {
+       font-family: shabnam;
+       src: url('../fonts/Shabnam.eot');
+       src: url('../fonts/Shabnam.eot?#iefix') format('embedded-opentype'), url('../fonts/Shabnam.woff') format('woff'), url('../fonts/Shabnam.ttf') format('truetype');
+       font-weight: normal;
+   }
+   
+   * {
+       box-sizing: border-box;
+       margin: 0px;
+       padding: 0px;
+       font-family: shabnam;
+   }
+   
+   h1,p {
+       line-height: 30px;
+   }
+
+   body {
+       background: yellow;
+       margin: 0px;
+       direction: rtl;
+       overflow: hidden;
+   }
+   
+   button {
+       cursor: pointer;
+   }
+
+   #register-paragraph {
+       color: white;
+       display: inline-block;
+       font-size: 19px;
+   }
+   input::placeholder {
+       color: #7b7b7b75;
+   }
+   
+   div.content {
+       background: white;
+       display: flex;
+       height: 100vh;
+       width: 100vw;
+   }
+   /*--------------------------------mevlana-box start ---------------------------------------*/
+   
+   .mevlana-box {
+       background: #025f9d;
+       height: 100vh;
+       width: 50vw;
+   }
+   
+   .mevlana-box>.mevlana-container {
+       margin-top: 33vh;
+       /* margin: 240px 0px; */
+       width: 100%;
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+   }
+   
+   .mevlana-box>.mevlana-container .row {
+       display: flex;
+       justify-content: center;
+       text-align: center;
+       margin: 20px 0px;
+   }
+   
+   .mevlana-box>.mevlana-container label {
+       border: 1px solid red;
+   }
+   
+   .mevlana-box>.mevlana-container .sign-btn {
+       width: 19vw;
+       height: 40px;
+       background: #e1094a;
+       border: none;
+       border-radius: 15px;
+       color: #fff;
+       font-size: 1rem;
+       /* padding: .5rem 1rem */
+   }
+   /*--------------------------------login-box start ---------------------------------------*/
+   
+   .login-box {
+       background: #ffffff;
+       height: 100vh;
+       width: 50vw;
+   }
+   
+   .login-box>.log-container {
+       margin-top: 33vh;
+       width: 100%;
+       display: flex;
+       justify-content: center;
+   }
+   
+   .login-box>.log-container>form {
+       height: 50%;
+       width: 60%;
+   }
+   
+   .login-box>.log-container>form label {
+       /*border: 1px solid red;*/
+   }
+   
+   .login-box>.log-container>form a {
+       /*border: 1px solid red;*/
+       text-decoration: none;
+   }
+
+   .login-box>.log-container> form >  .input-container{
+       position: relative;
+   }
+   .login-box>.log-container> form >  .input-container > input[type=text],
+   .login-box>.log-container> form >  .input-container > input[type=password]{
+       width: 100%;
+       padding: 12px 40px;
+       margin: 8px 0;
+       display: inline-block;
+       border: 1px solid #ccc;
+       box-sizing: border-box;
+   }
+   .login-box>.log-container> form >  .input-container > input:focus{
+       border: 1px solid dodgerblue;
+       box-shadow: 0px 0px 2px 1px #88E4FF;
+   }
+
+   .login-box>.log-container> form >  .input-container > i {
+       position: absolute;
+       right: 15px;
+       top: 40px;
+       color: gray;
+   }
+   .login-box>.log-container> form >  .input-container > span {
+       position: absolute;
+       left: 15px;
+       top: 40px;
+       color: gray;
+   }
+   .login-box>.log-container> form >  .input-container > span:hover {
+       color: #ccc;
+   }
+   .login-box>.log-container> form >  .input-container > .input-field {
+       width: 100%;
+       padding: 10px;
+       outline: none;
+   }
+
+
+
+
+
+   .login-box>.log-container>form input {
+       height: 40px;
+       border: 1px solid #bbb;
+       border-radius: 15px;
+       box-sizing: border-box;
+       display: block;
+       font-size: .875rem;
+       margin-bottom: 1rem;
+       padding-right: 6vw;
+       width: 100%;
+       /* Gohari add */
+       outline: none;
+       /* Gohari finish */
+   }
+   
+   .login-box>.log-container>form input[type="checkbox"] {
+       -webkit-appearance: checkbox;
+       -moz-appearance: checkbox;
+       display: inline-block;
+       width: auto;
+       margin-top: -1.6vh;
+       margin-left: 7px;
+       background-color: #fff;
+       cursor: pointer;
+
+   }
+   
+   .remember {
+       display: flex;
+       justify-content: space-evenly;
+       height: 30px;
+       font-size: small;
+   }
+   
+   .login-box>.log-container>form button {
+       width: 100%;
+       height: 40px;
+       background-color: #1fa840;
+       border: none;
+       border-radius: 15px;
+       color: #fff;
+       font-size: 1rem;
+       /* padding: .5rem 1rem; */
+   }
+   .login-box>.log-container>form button:hover {
+       background: #1fa830;
+   }
+   
+   .btn-login-section {
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       font-size: small;
+       margin-top: 10px;
+   }
+   
+   .site-title {
+       color: white;
+       display: inline-block;
+   }
+   /*----------------------------------  @MEDIA ------------------------------------------*/
+   
+   @media screen and (max-width: 768px) {
+       h1,
+       p {
+           line-height: unset;
+       }
+       h1 {
+           font-size: 20px;
+       }
+       p, a, label, button {
+           font-size: 10px;
+       }
+
+       .content {
+           flex-direction: column-reverse;
+       }
+       .mevlana-box {
+           background: #025f9d;
+           width: 100vw;
+           height: 50vh;
+       }
+       .mevlana-box>.mevlana-container {
+           margin-top: 5vh;
+           display: flex;
+           flex-direction: column;
+           /*border: 1px solid red;*/
+       }
+       .mevlana-box>.mevlana-container .row {
+           display: flex;
+           justify-content: center;
+           text-align: center;
+           /* margin: 20px 0px; */
+       }
+       .mevlana-box>.mevlana-container .sign-btn {
+           /* width: 30%;
+        height: 40px; */
+           background: #e1094a;
+           border: none;
+           border-radius: 15px;
+           color: #fff;
+           /* font-size: 1rem; */
+           /* padding: .5rem 1rem; */
+       }
+       .login-box {
+           background: #fff;
+           width: 100vw;
+           height: 50vh;
+       }
+       .login-box>.log-container {
+           margin-top: 5vh;
+           /* margin: 10px 0px; */
+       }
+       .login-box>.log-container>form label ,
+       .login-box>.log-container>form a{
+           /*border: 1px solid blue;*/
+           line-height: unset;
+           font-size: 12px;
+       }
+        ::-webkit-input-placeholder {
+           /* WebKit browsers */
+           color: transparent;
+       }
+        :-moz-placeholder {
+           /* Mozilla Firefox 4 to 18 */
+           color: transparent;
+       }
+        ::-moz-placeholder {
+           /* Mozilla Firefox 19+ */
+           color: transparent;
+       }
+        :-ms-input-placeholder {
+           /* Internet Explorer 10+ */
+           color: transparent;
+       }
+       input::placeholder {
+           color: transparent;
+       }
+       .login-box>.log-container>form input {
+           height: 40px;
+           border: 1px solid #bbb;
+           border-radius: 15px;
+           box-sizing: border-box;
+           display: block;
+           font-size: unset;
+           margin-bottom: unset;
+           padding-right: 6vw;
+           width: 100%;
+           outline: none;
+       }
+       .login-box>.log-container>form button {
+           width: 100%;
+           height: 40px;
+           background-color: #1fa840;
+           border: none;
+           border-radius: 15px;
+           color: #fff;
+           font-size: 12px;
+       }
+
+   }
